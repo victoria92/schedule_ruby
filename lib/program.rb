@@ -20,10 +20,4 @@ class Program
     class_to_remove.grade.remove_class_from_program(class_to_remove.day, class_to_remove.hour)
     program
   end
-
-  def to_s
-    string = ""
-    program.each {|time, subject| string = string + "#{time[0]} #{time[1].name} #{time[2]} #{subject}\n"}
-    string
-  end
 end

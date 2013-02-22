@@ -26,6 +26,6 @@ class Teacher
   end
 
   def to_s
-    "#{name} #{subject}\n"     #nqkakvo podravnpvane?
+    "#{subject}\n"     #nqkakvo podravnpvane?
   end
 end

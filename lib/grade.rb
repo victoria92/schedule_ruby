@@ -24,4 +24,12 @@ class Grade
   def remove_class_from_program(day, hour)
     program.delete [day, hour]
   end
+
+  def get_day_program(day)
+    1.upto(7).reduce("") { |string, hour| string + "#{hour}. #{program[[day, hour]]}\n" }
+  end
+
+  def visualize_grade_program
+    DAYS.reduce("") { |string, day| string + get_day_program(day) }
+  end
 end

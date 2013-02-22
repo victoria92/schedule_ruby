@@ -47,30 +47,10 @@ class School
 
     create_program(order_of_adding_classes)
   end
+
+  def visualize_program
+    string = ""
+    grades.map { |grade| string = string + "#{grade.name}\n\n" + grade.visualize_grade_program }
+    string
+  end
 end
-
-FVS = Teacher.new("Demirov", "FVS")
-Music = Teacher.new("Petrova", "Music")
-II = Teacher.new("Krysteva", "II")
-IT = Teacher.new("Karadjova", "IT")
-Biology = Teacher.new("Petkova", "Biology")
-Physics = Teacher.new("Kostadinova", "Physics")
-Psycology = Teacher.new("Dacheva", "Psycology")
-History = Teacher.new("Petrova", "History")
-Chemistry = Teacher.new("Hineva", "Chemistry")
-Geography = Teacher.new("Dokimova", "Geography")
-Maths = Teacher.new("Parusheva", "Maths")
-BEL = Teacher.new("Trendafilova", "BEL")
-AE = Teacher.new("Georgieva", "AE")
-RE = Teacher.new("Todorova", "RE")
-Informatics = Teacher.new("Trifonova", "Informatics")
-teachers = [FVS, Music, II, IT, Biology, Physics, Psycology, History, Chemistry, Geography, Maths, BEL, AE, RE, Informatics]
-a = Grade.new("9a", [Subject.new("FVS", FVS), Subject.new("FVS", FVS), Subject.new("Music", Music), Subject.new("II", II), Subject.new("IT", IT), Subject.new("Biology", Biology), Subject.new("Biology", Biology), Subject.new("Physics", Physics), Subject.new("Physics", Physics), Subject.new("Psycology", Psycology), Subject.new("Psycology", Psycology), Subject.new("History", History), Subject.new("Chemistry", Chemistry), Subject.new("Geography", Geography), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("BEL", BEL), Subject.new("BEL", BEL), Subject.new("BEL", BEL), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("RE", RE), Subject.new("RE", RE), Subject.new("Informatics", Informatics)])
-b = Grade.new("9b", [Subject.new("FVS", FVS), Subject.new("FVS", FVS), Subject.new("Music", Music), Subject.new("II", II), Subject.new("IT", IT), Subject.new("Biology", Biology), Subject.new("Biology", Biology), Subject.new("Physics", Physics), Subject.new("Physics", Physics), Subject.new("Psycology", Psycology), Subject.new("Psycology", Psycology), Subject.new("History", History), Subject.new("Chemistry", Chemistry), Subject.new("Geography", Geography), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("BEL", BEL), Subject.new("BEL", BEL), Subject.new("BEL", BEL), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("RE", RE), Subject.new("RE", RE), Subject.new("Informatics", Informatics)])
-c = Grade.new("9v", [Subject.new("FVS", FVS), Subject.new("FVS", FVS), Subject.new("Music", Music), Subject.new("II", II), Subject.new("IT", IT), Subject.new("Biology", Biology), Subject.new("Biology", Biology), Subject.new("Physics", Physics), Subject.new("Physics", Physics), Subject.new("Psycology", Psycology), Subject.new("Psycology", Psycology), Subject.new("History", History), Subject.new("Chemistry", Chemistry), Subject.new("Geography", Geography), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("BEL", BEL), Subject.new("BEL", BEL), Subject.new("BEL", BEL), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("RE", RE), Subject.new("RE", RE), Subject.new("Informatics", Informatics)])
-d = Grade.new("9g", [Subject.new("FVS", FVS), Subject.new("FVS", FVS), Subject.new("Music", Music), Subject.new("II", II), Subject.new("IT", IT), Subject.new("Biology", Biology), Subject.new("Biology", Biology), Subject.new("Physics", Physics), Subject.new("Physics", Physics), Subject.new("Psycology", Psycology), Subject.new("Psycology", Psycology), Subject.new("History", History), Subject.new("Chemistry", Chemistry), Subject.new("Geography", Geography), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("BEL", BEL), Subject.new("BEL", BEL), Subject.new("BEL", BEL), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("RE", RE), Subject.new("RE", RE), Subject.new("Informatics", Informatics)])
-e = Grade.new("9d", [Subject.new("FVS", FVS), Subject.new("FVS", FVS), Subject.new("Music", Music), Subject.new("II", II), Subject.new("IT", IT), Subject.new("Biology", Biology), Subject.new("Biology", Biology), Subject.new("Physics", Physics), Subject.new("Physics", Physics), Subject.new("Psycology", Psycology), Subject.new("Psycology", Psycology), Subject.new("History", History), Subject.new("Chemistry", Chemistry), Subject.new("Geography", Geography), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("Maths", Maths), Subject.new("BEL", BEL), Subject.new("BEL", BEL), Subject.new("BEL", BEL), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("AE", AE), Subject.new("RE", RE), Subject.new("RE", RE), Subject.new("Informatics", Informatics)])
-
-MG = School.new(teachers, [a, b, c, d, e])
-MG.create_program
-print MG.program
