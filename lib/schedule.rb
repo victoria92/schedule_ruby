@@ -1,5 +1,5 @@
 require 'sinatra'
-require '../lib/school'
+require './school'
 
 teachers = []
 grades = []
