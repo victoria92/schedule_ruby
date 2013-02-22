@@ -1,7 +1,7 @@
 TEST_AVAILABLES = [["Monday", 6], ["Monday", 7], ["Tuesday", 6], ["Tuesday", 7], ["Wednesday", 1], ["Wednesday", 2], ["Wednesday", 3], ["Wednesday", 4], ["Wednesday", 5], ["Wednesday", 6], ["Wednesday", 7], ["Thursday", 1], ["Thursday", 2], ["Thursday", 3], ["Thursday", 4], ["Thursday", 5], ["Thursday", 6], ["Thursday", 7], ["Friday", 1], ["Friday", 2], ["Friday", 3], ["Friday", 4], ["Friday", 5], ["Friday", 6], ["Friday", 7]]
 
 class TeacherTest < MiniTest::Unit::TestCase
-	def test_creating_teacher
+  def test_creating_teacher
     assert_equal "Boryana Parusheva", Teacher.new("Boryana Parusheva", "Mathematics").name
     assert_equal "Mathematics", Teacher.new("Boryana Parusheva", "Mathematics").subject
   end

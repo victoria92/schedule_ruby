@@ -1,4 +1,4 @@
-GRADE_AVAILABLE = [["Monday", 6], ["Monday", 7], ["Tuesday", 6], ["Tuesday", 7], ["Wednesday", 1], ["Wednesday", 2], ["Wednesday", 3], ["Wednesday", 4], ["Wednesday", 5], ["Wednesday", 6], ["Wednesday", 7], ["Thursday", 1], ["Thursday", 2], ["Thursday", 3], ["Thursday", 4], ["Thursday", 5], ["Thursday", 6], ["Thursday", 7], ["Friday", 1], ["Friday", 2], ["Friday", 3], ["Friday", 4], ["Friday", 5], ["Friday", 6], ["Friday", 7]]
+TEST_AVAILABLES = [["Monday", 6], ["Monday", 7], ["Tuesday", 6], ["Tuesday", 7], ["Wednesday", 1], ["Wednesday", 2], ["Wednesday", 3], ["Wednesday", 4], ["Wednesday", 5], ["Wednesday", 6], ["Wednesday", 7], ["Thursday", 1], ["Thursday", 2], ["Thursday", 3], ["Thursday", 4], ["Thursday", 5], ["Thursday", 6], ["Thursday", 7], ["Friday", 1], ["Friday", 2], ["Friday", 3], ["Friday", 4], ["Friday", 5], ["Friday", 6], ["Friday", 7]]
 
 class GradeTest < MiniTest::Unit::TestCase
   def test_creating_grade
@@ -55,6 +55,6 @@ class GradeTest < MiniTest::Unit::TestCase
     grade.add_class_to_program("Tuesday", 4, teacher)
     grade.add_class_to_program("Tuesday", 5, teacher)
 
-    assert_equal GRADE_AVAILABLE, grade.available_hours
+    assert_equal TEST_AVAILABLES, grade.available_hours
   end
 end
