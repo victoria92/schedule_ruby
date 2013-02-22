@@ -28,4 +28,12 @@ class Teacher
   def to_s
     "#{subject}\n"     #nqkakvo podravnpvane?
   end
+
+    def get_day_program(day)
+    1.upto(7).reduce("") { |string, hour| string + "#{hour}. #{program[[day, hour]]}\n" }
+  end
+
+  def visualize_teacher_program
+    DAYS.reduce("") { |string, day| string + get_day_program(day) }
+  end
 end

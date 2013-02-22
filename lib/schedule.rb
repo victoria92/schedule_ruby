@@ -33,6 +33,10 @@ post '/grade_form' do
   redirect '/'
 end
 
+# get '/teacher/:name' do
+#   teachers.select { |teacher| teacher.name = params[:name] }.first.visualize_teacher_program
+# end
+
 get '/grades' do
   erb :grades, locals: { grades: grades }
 end

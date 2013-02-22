@@ -49,8 +49,6 @@ class School
   end
 
   def visualize_program
-    string = ""
-    grades.map { |grade| string = string + "#{grade.name}\n\n" + grade.visualize_grade_program }
-    string
+    grades.reduce("") { |string, grade| string + "#{grade.name}\n\n" + grade.visualize_grade_program }
   end
 end
