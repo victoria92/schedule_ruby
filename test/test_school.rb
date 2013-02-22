@@ -1,0 +1,21 @@
+class SchoolTest < MiniTest::Unit::TestCase
+  def test_mutual_available_hours
+    teacher = Teacher.new("Boryana Parusheva", "Mathematics")
+    subject = Subject.new("Mathematics", teacher)
+    grade = Grade.new("9a", [subject])
+    grade.add_class_to_program("Monday", 1, teacher)
+    grade.add_class_to_program("Monday", 2, teacher)
+    grade.add_class_to_program("Monday", 3, teacher)
+    grade.add_class_to_program("Monday", 4, teacher)
+    grade.add_class_to_program("Monday", 5, teacher)
+    grade.add_class_to_program("Tuesday", 1, teacher)
+    grade.add_class_to_program("Tuesday", 2, teacher)
+    grade.add_class_to_program("Tuesday", 3, teacher)
+    grade.add_class_to_program("Tuesday", 4, teacher)
+    grade.add_class_to_program("Tuesday", 5, teacher)
+    teacher.add_class_to_program("Monday", 6, "9a")
+    school = School.new([teacher], [grade])
+    result = [["Monday", 7], ["Tuesday", 6], ["Tuesday", 7], ["Wednesday", 1], ["Wednesday", 2], ["Wednesday", 3], ["Wednesday", 4], ["Wednesday", 5], ["Wednesday", 6], ["Wednesday", 7], ["Thursday", 1], ["Thursday", 2], ["Thursday", 3], ["Thursday", 4], ["Thursday", 5], ["Thursday", 6], ["Thursday", 7], ["Friday", 1], ["Friday", 2], ["Friday", 3], ["Friday", 4], ["Friday", 5], ["Friday", 6], ["Friday", 7]]
+    assert_equal  result, school.mutual_available_hours(teacher, grade)
+  end
+end
