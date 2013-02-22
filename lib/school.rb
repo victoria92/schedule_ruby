@@ -1,4 +1,4 @@
-require './program'
+require '../lib/program'
 
 class School
   attr_accessor :teachers, :grades, :program, :all_school_classes

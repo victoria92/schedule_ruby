@@ -1,4 +1,4 @@
-require './teacher'
+require '../lib/teacher'
 
 EASY = ["FVS", "Music", "II", "IT", "ChKR"]
 MEDIUM = ["Biology", "Physics", "Chemistry", "History", "Geography", "Psycology"]

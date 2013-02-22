@@ -1,8 +1,0 @@
-require 'minitest/unit'
-require './test/test_teacher'
-require './test/test_subject'
-require './test/test_grade'
-require './test/test_classes'
-require './test/test_program'
-require './test/test_school'
-require './lib/school'

@@ -1,3 +1,6 @@
+require '../lib/program'
+require 'minitest/unit'
+
 class ProgramTest < MiniTest::Unit::TestCase
   def test_creating_empty_program
     test_program = Program.new

@@ -1,4 +1,4 @@
-require './classes'
+require '../lib/classes'
 
 class Program
   attr_accessor :program

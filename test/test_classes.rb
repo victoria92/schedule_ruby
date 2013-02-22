@@ -1,3 +1,6 @@
+require '../lib/classes'
+require 'minitest/unit'
+
 class ClassesTest < MiniTest::Unit::TestCase
   def test_creating_classes
     t = Teacher.new("Boryana Parusheva", "Mathematics")

@@ -1,3 +1,6 @@
+require '../lib/subject'
+require 'minitest/unit'
+
 class SubjectTest < MiniTest::Unit::TestCase
   def test_creating_subject
     t = Teacher.new("Dobromir Demirov", "FVS")

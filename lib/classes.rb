@@ -1,4 +1,4 @@
-require './grade'
+require '../lib/grade'
 
 class Classes
   attr_accessor :grade, :subject, :teacher, :day, :hour

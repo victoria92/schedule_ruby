@@ -1,4 +1,4 @@
-require './subject'
+require '../lib/subject'
 
 class Grade
   attr_accessor :name, :subjects, :program
