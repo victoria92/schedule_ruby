@@ -5,7 +5,7 @@ class Teacher
 
   def initialize(name, subject)
     @name = name
-    @subject = subject #only name!!! Maybe ID?
+    @subject = subject
     @program = {}
   end
 
@@ -26,7 +26,7 @@ class Teacher
   end
 
   def to_s
-    "#{subject}\n"     #nqkakvo podravnpvane?
+    "#{subject}\n"
   end
 
     def get_day_program(day)
