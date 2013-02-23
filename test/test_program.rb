@@ -8,7 +8,7 @@ class ProgramTest < MiniTest::Unit::TestCase
     assert_equal Hash.new, test_program.program
   end
 
-  def test_adding_class_to_program       #Is it added to grade and teacher's program?
+  def test_adding_class_to_program
     test_program = Program.new
     t = Teacher.new("Boryana Parusheva", "Mathematics")
     subject = Subject.new("Mathematics", t)
@@ -20,7 +20,7 @@ class ProgramTest < MiniTest::Unit::TestCase
     assert_equal result, test_program.program
   end
 
-  def test_removing_class_from_program        #Is it removed from grade and teacher's program?
+  def test_removing_class_from_program
     test_program = Program.new
     t = Teacher.new("Boryana Parusheva", "Mathematics")
     subject = Subject.new("Mathematics", t)
