@@ -26,7 +26,7 @@ class Grade
   end
 
   def get_day_program(day)
-    1.upto(7).reduce("") { |string, hour| string + "#{hour}. #{program[[day, hour]]}\n" }
+    "\n#{day}\n" + 1.upto(7).reduce("") { |string, hour| string + "#{hour}. #{program[[day, hour]]}\n" }
   end
 
   def visualize_grade_program
