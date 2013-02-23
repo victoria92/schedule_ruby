@@ -5,8 +5,8 @@ class Classes
 
   def initialize(grade, subject, teacher, day, hour)
     @grade = grade
-    @subject = subject #add day_hour in other method
-    @teacher = teacher #only subject's name!!!
+    @subject = subject
+    @teacher = teacher
     @day = day
     @hour = hour
   end
