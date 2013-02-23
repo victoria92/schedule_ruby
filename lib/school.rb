@@ -6,7 +6,6 @@ class School
   def initialize(teachers, grades)
     @teachers = teachers
     @grades = grades
-    #@programs ?
     @program = Program.new
     @all_school_classes = grades.map { |grade| grade.subjects.map { |subject| [grade, subject] } }.flatten(1)
   end
